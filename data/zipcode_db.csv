@@ -1,0 +1,37 @@
+zipcode,region,state,country,lat,long,population
+700001,Kolkata,West Bengal,India,22.5726,88.3639,14974073
+226001,Lucknow,Uttar Pradesh,India,26.8467,80.9462,3764619
+248001,Dehradun,Uttarakhand,India,30.3165,78.0322,943136
+799001,Agartala ,Tripura ,India,23.8315,91.2868,595210
+500001,Hyderabad,Telangana ,India,17.385,78.4867,10268653
+600001,Chennai,Tamil Nadu,India,13.0827,80.2707,11235018
+737101,Gangtok,Sikkim,India,24.817,93.817,272118
+795001,Imphal,Manipur,India,25.5788,91.8933,593524
+793001,Shillong,Meghalaya,India,23.7307,92.7173,471627
+796001,Aizawl,Mizoram,India,25.6751,94.1086,378336
+797001,Kohima,Nagaland ,India,20.2961,85.8245,293534
+750017,Bhubaneswar ,Odisha,India,30.7333,76.7794,1194431
+133301,Chandigarh,Punjab ,India,20.2961,85.8245,1169244
+302001,Jaipur,Rajasthan,India,26.9124,75.7873,1622454
+190001,Srinagar,Jammu & Kashmir,India,34.0837,74.7973,114120
+194104,Leh,Ladakh,India,34.1526,77.5771,12419
+682555,Kavaratti,Lakshadweep,India,10.5593,72.6358,856354
+605001,Puducherry,Puducherry,India,11.9416,79.8083,227411
+500001,Hyderabad,Andhra Pradesh,India,17.3851,78.4867,10268653
+791111,Itanagar,Arunachal Pradesh,India,27.0844,93.6053,81082
+781005,Dispur,Assam,India,26.1573,91.7953,
+800001,Patna,Bihar,India,25.5941,85.1301,2481530
+490042,Raipur,Chattisgarh,India,21.2587,81.6261,1702048
+403001,Panaji,Goa,India,15.4909,73.8178,
+382002,Gandhinagar,Gujarat,India,23.2156,72.6369,280792
+160001,Chandigarh,Haryana,India,30.7333,76.7794,1169244
+171001,Shimla,Himachal Pradesh,India,31.1048,77.1734,173503
+834001,Ranchi,Jharkhand,India,23.3441,85.3096,846454
+560001,Banglore,Karnataka,India,12.9716,77.5946,5104047
+695001,Thiruvananthapuram ,Kerala,India,8.5241,76.9366,784153
+462002,Bhopal,Madhya Pradesh,India,23.2599,77.4126,1599914
+400001,Mumbai,Maharastra,India,19.076,72.8777,12691836
+744101,Port Blair,Andaman and Nicobar Islands,India,11.6234,92.7265,112050
+160001,Chandigarh,-,India,30.7333,76.7794,1169244
+396210,Daman,Daman and Diu,India,20.3974,72.8328,320989
+110001,Delhi,-,India,28.7041,77.1025,10927986
