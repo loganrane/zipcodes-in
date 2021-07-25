@@ -1,28 +1,24 @@
 import json
 from pprint import pprint
-
 from internal_utils import (parseCSV)
+
 
 def main():
     SCHEMA = {
         "zipcode" : {"public": "zipcode"},
         "region": {"public": "region"},
-        "state": {"public": "state"},
+        "state_ut": {"public": "state_ut"},
         "country": {"public": "country"},
-        "latitude": {"public": "lat"},
-        "longitude": {"public": "long"},
-        "population": {"public": "population"},
+        "latitude": {"public": "latitude"},
+        "longitude": {"public": "longitude"},
+        "post_office": {"public": "post_office"},
     }
 
     databaseFileName = ".\data\zipcode_db.csv"
     baseData = parseCSV(databaseFileName)
-
-    print("writing zipcode information for {} places".format(len(baseData)))
     
-    with open("zips.json", "w") as f:
+    with open("..\zipcode_script\zips.json", "w") as f:
         json.dump(baseData, f)
-
-    pprint(baseData)
 
 
 if __name__ == "__main__":
