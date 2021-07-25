@@ -26,29 +26,11 @@ listOfCountries = [
     "Australia",
 ]
 
-# i = input("Enter the country: ")
+i = input("Enter the country: ")
 
-# for country in listOfCountries:
-#     if(editDistance(i, country) < 3):
-#         print(country)
+for country in listOfCountries:
+    if(editDistance(i, country) < 5):
+        print(country)
     
-# Current working directory
-# os.getcwd()
 
-# Change working directory
-# os.chdir("C://")
-
-# List directories
-# os.listdir() ## Base
-# os.lostdir("C://") ## C pe
-
-# Make directory
-# os.mkdir("This") # Make a folder named -> This
-
-# Make directories (sub directory ban jaaye)
-# os.makedirs("This/that") # Make a folder named -> This uske andar -> that
-
-# Rename a file
-# os.rename()
-import os
-print(os.environ.get('Path'))
+# Distance function ka weight will be based on distance of 2 chars on the keyboard.
