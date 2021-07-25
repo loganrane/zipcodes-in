@@ -17,7 +17,7 @@ setup (
     url="https://github.com/arpitfalcon/zipcodes-in"
 
     # Include all package except make_data and tests
-    packages=find_packages(exclude=("make_data", "tests"))
+    packages=find_packages(exclude=("make_data", "tests", "make_graph"))
     install_requires=[],
     keywords="zipcode zip code india in state validate filter find query"
     include_package_data=True,
