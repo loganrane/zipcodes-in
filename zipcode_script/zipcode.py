@@ -17,8 +17,8 @@ class Zipcode():
     def __init__(self):
         """Constructor to initialze the path, data and valid length."""
         self._validLen = 6
-        self._basePath = os.path.join(os.path.abspath("."), 'zips.json')
-        
+        self._basePath = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'zips.json')
+
         with open(self._basePath, "rb") as f:
             self._baseData = json.load(f)
 
@@ -56,7 +56,7 @@ class Zipcode():
     def listTopN(self, N):
         """Return the first N entries"""
         return self._baseData[:N]
-    
+
     def listAll(self):
         """Return whole dataset"""
         return self._baseData
@@ -65,11 +65,12 @@ class Zipcode():
         """Return a random entry"""
         idx = random.randint(0, len(self._baseData))
         return self._baseData[idx]
-    
+
     def listRandomN(self, N):
         """Return a list of N random entries"""
         if N > 100:
-            raise ValueError("Please enter N <= 100 or use listAll to get all data")
+            raise ValueError(
+                "Please enter N <= 100 or use listAll to get all data")
         idx = random.sample([i for i in range(0, len(self._baseData))], N)
         res = [self._baseData[i] for i in idx]
 
