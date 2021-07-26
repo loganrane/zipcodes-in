@@ -17,16 +17,18 @@ class Input():
         parser.add_argument(
             '-n',
             type=str,
-            help='Used with topN and randomN function',
-            dest='N',
-            required=False
+            help='Used with listTopN and listRandomN function',
+            required=False,
+            default='834001',
         )
 
         parser.add_argument(
-            '-z', '--zipcode',
+            '--zipcode','-z',
             type=str,
-            help='Input the zipcode, used with matching and validation',
-            required=False
+            help='Input the zipcode, used with matching and validate',
+            required=False,
+            default='3',
+            dest='zipcode'
         )
         
 

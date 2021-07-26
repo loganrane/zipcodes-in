@@ -5,19 +5,23 @@ import sys
 def main():
     inp = Input()
     options = inp.get_args()
+    
+    function = options['function']
+    n = options['n']
+    zipcode = options['zipcode']
 
     zip = Zipcode()
+    functionCall = 'print(zip)'
 
-    # functionCalled = eval(options['function'])
-    
-    # print(functionCalled)
-    # functionCalled()
-    print(options['function'])
-    print(type(options['function']))
-    op = 'zip.' + options['function'] + '()'
-    print(eval(op))
+    if function == 'listAll' or function == 'random':
+        functionCall = f'zip.{function}()'
+    if function == 'matching' or function == 'validate':
+        functionCall = f'zip.{function}("{zipcode}")'
+    if function == 'listRandomN' or function == 'listTopN':
+        functionCall = f'zip.{function}({n})'
 
-
+    print(functionCall)
+    return str(eval(functionCall))
 
 
 if __name__ == '__main__':
