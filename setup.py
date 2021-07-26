@@ -14,11 +14,16 @@ setup (
     long_description_content_type = "text/markdown",
 
     # Homepage
-    url="https://github.com/arpitfalcon/zipcodes-in"
+    url="https://github.com/arpitfalcon/zipcodes-in",
 
     # Include all package except make_data and tests
-    packages=find_packages(exclude=("make_data", "tests"))
+    packages=find_packages(exclude=("make_data", "tests", "make_graph")),
     install_requires=[],
-    keywords="zipcode zip code india in state validate filter find query"
+    keywords="zipcode zip code india in state validate filter find query",
     include_package_data=True,
-)
+    entry_points = {
+    'console_scripts': [
+        'zipcode = zipcode_script.__main__:main'
+    ],
+    
+    })
