@@ -20,7 +20,6 @@ def main():
     if function == 'listRandomN' or function == 'listTopN':
         functionCall = f'zip.{function}({n})'
 
-    print(functionCall)
     return str(eval(functionCall))
 
 
