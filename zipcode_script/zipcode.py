@@ -18,7 +18,9 @@ class Zipcode():
         """Constructor to initialze the path, data and valid length."""
         self._validLen = 6
         self._basePath = os.path.join(os.path.abspath("."), 'zips.json')
-        self._baseData = json.load(self._basePath)
+        
+        with open(self._basePath, "rb") as f:
+            self._baseData = json.load(f)
 
     def __repr__(self):
         """Print the description when print(obj) is called."""
@@ -37,7 +39,7 @@ class Zipcode():
             return res
         return wrapper
 
-    def _clean(zipcode):
+    def _clean(self, zipcode):
         """Remove whitespaces and check the length, format and character."""
         zipcode = zipcode.strip()
 
@@ -54,11 +56,24 @@ class Zipcode():
     def listTopN(self, N):
         """Return the first N entries"""
         return self._baseData[:N]
+    
+    def listAll(self):
+        """Return whole dataset"""
+        return self._baseData
 
     def random(self):
         """Return a random entry"""
         idx = random.randint(0, len(self._baseData))
         return self._baseData[idx]
+    
+    def listRandomN(self, N):
+        """Return a list of N random entries"""
+        if N > 100:
+            raise ValueError("Please enter N <= 100 or use listAll to get all data")
+        idx = random.sample([i for i in range(0, len(self._baseData))], N)
+        res = [self._baseData[i] for i in idx]
+
+        return res
 
     @_cleanZipcode
     def matching(self, zipcode):
@@ -67,4 +82,4 @@ class Zipcode():
 
     @_cleanZipcode
     def validate(self, zipcode):
-        return self.matching(zipcode) is not None
+        return bool(self.matching(zipcode))
