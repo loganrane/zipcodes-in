@@ -9,6 +9,8 @@ with open("VERSION.txt") as f:
 setup (
     name="zipcodes-in",
     version = version_num.strip(),
+    author="Arpit",
+    author_email="arpitfalcon1@gmail.com",
     description = "Indian Zip Codes",
     long_description = readme,
     long_description_content_type = "text/markdown",
@@ -21,9 +23,15 @@ setup (
     install_requires=[],
     keywords="zipcode zip code india in state validate filter find query",
     include_package_data=True,
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires=">=3.6",
     entry_points = {
     'console_scripts': [
-        'zipcode = zipcode_script.__main__:main'
+        'zipcode = zipcode_in.__main__:main'
     ],
     
     })

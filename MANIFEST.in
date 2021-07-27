@@ -1,4 +1,4 @@
 include README.rst VERSION.txt
 recursive-exclude make_data *
 recursive-exclude make_graph *
-recursive-include zipcode_script *
+recursive-include zipcode_in *
