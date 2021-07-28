@@ -21,7 +21,7 @@ Zipcodes-in is a Python library built for querying India zipcodes, post offices 
 ## 💻 Installation 
 ```python
 # Install the package 
->>> pip install . 
+>>> pip install zipcodes-in
 ```
 
 ## 👩‍💻 Running Scripts

@@ -1,9 +1,9 @@
 from setuptools import setup, find_packages
 
-with open("README.md") as f:
+with open("README.md", "r", encoding='utf-8') as f:
     readme = f.read()
 
-with open("VERSION.txt") as f:
+with open("VERSION.txt", "r") as f:
     version_num = f.read()
 
 setup (
