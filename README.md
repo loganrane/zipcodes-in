@@ -33,7 +33,13 @@ Zipcode class to validate and fetch data of provided India zipcode
 
 >>> # Zipcode matching
 >>> print(zipcode.matching('834001'))
-[{'zipcode': '834001', 'region': 'Ranchi', 'state_ut': 'Jharkhand', 'country': 'India', 'latitude': '23.3505', 'longitude': '85.2927', 'post_office': 'Argora.'}]
+[{'zipcode': '834001', 
+'region': 'Ranchi', 
+'state_ut': 'Jharkhand', 
+'country': 'India', 
+'latitude': '23.3505', 
+'longitude': '85.2927', 
+'post_office': 'Argora.'}]
 
 # Print random zipcodes 
 >>> print(zipcode.random())
