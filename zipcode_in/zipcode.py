@@ -44,7 +44,7 @@ class Zipcode():
         """Remove whitespaces and check the length, format and character."""
         zipcode = zipcode.strip()
 
-        if len(zipcode) >= self._validLen:
+        if len(zipcode) > self._validLen:
             raise ValueError(
                 "Invalid Format, zipcode must be of the format: XXXXXX for hard search and any less character for soft search")
 
